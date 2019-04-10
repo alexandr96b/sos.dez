@@ -1,5 +1,44 @@
 $(document).ready(function () {
 
+timer(3300, '.b-timer__item .hour', '.b-timer__item .min', '.b-timer__item .sec');
+
+function timer(value, hourBlock, minBlock, secBlock){
+
+        var timerValue = value;
+
+        function time(timestamp){
+          if (timestamp < 0) timestamp = 0;
+
+
+          var mins = Math.floor((timestamp)/60);
+          var secs = Math.floor(timestamp - mins*60);
+          var left_hour = Math.floor( 60 / 60 );
+
+
+          $(minBlock).text(function(){
+            if (mins < 10){
+              mins = "0" + mins;
+            }
+            return mins;
+          });              
+          $(secBlock).text(function(){
+            if (secs < 10){
+              secs = "0" + secs;
+            }
+            return secs;
+          }); 
+        }
+        setInterval(function(){
+          timerValue = timerValue - 1;
+          if(timerValue==1)document.location.reload();
+          time(timerValue);
+        }, 1000);
+      }
+
+
+
+
+
 $(".b-main-left__bottom a").click(function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
@@ -585,7 +624,7 @@ function init() {
         map: map,
         title: 'Snazzy!',
                 icon: {
-                    url: "images/map-ico.png",
+                    url: "images/map-ico.svg",
                     scaledSize: new google.maps.Size(40, 45),
                     labelOrigin: new google.maps.Point(145, 25, 5),
                     origin: new google.maps.Point(0, 0),
