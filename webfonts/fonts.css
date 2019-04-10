@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Circe';
+	src: url('Circe-Regular.eot');
+	src: local('Circe'), local('Circe-Regular'),
+		url('Circe-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Circe-Regular.woff') format('woff'),
+		url('Circe-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url('../webfonts/ProximaNovaBold.eot');
+    src: url('../webfonts/ProximaNovaBold.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/ProximaNovaBold.woff') format('woff'),
+    url('../webfonts/ProximaNovaBold.ttf') format('truetype'),
+    url('../webfonts/ProximaNovaBold.svg#ProximaNovaBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+} 
