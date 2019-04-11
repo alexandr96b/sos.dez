@@ -897,6 +897,7 @@ section{
 	background: #c5ced9;
 	border-radius: 20px 0px;
 	overflow: hidden;
+	box-shadow: 0 10px 15px rgba(51, 51, 51, 0.1);
 	margin: 0 0 25px 0;
 }
 .b-services-item__img img{
@@ -908,12 +909,6 @@ section{
 	line-height: 18px;
 	font-weight: 400;
 }
-#map{
-	width: 100%;
-	height: 500px;
-}
-
-
 /* -------------- b-wrap -------------- */
 .b-wrap{
 	padding: 85px 0;
@@ -998,4 +993,62 @@ section{
 }
 .b-form-row .b-checkbox{
 	margin: 0;
+}
+/* -------------- b-desc -------------- */
+.b-desc{
+	background: #ffffff;
+	padding: 80px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-desc-item{
+
+}
+.b-desc-item__number{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 0 20px 0;
+}
+.b-desc-item__number span{
+	display: block;
+	margin: 0 9px 0 0;
+	color: darkgrey;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	text-transform: uppercase;	
+}
+.b-desc-item__arrow{
+	background: url(../images/b-desc-item____arrow.png) no-repeat;
+	width: 19px;
+	height: 12px;
+}
+.b-desc-item__img{
+	margin: 0 0 35px 0;
+}
+.b-desc-item__text{
+
+}
+.b-desc-item__text b{
+	display: block;
+	color: #333;
+	font-size: 21px;
+	line-height: 25px;
+	font-weight: 700;	
+	margin: 0 0 13px 0;
+}
+.b-desc-item__text p{
+	color: #646464;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
+	margin: 0;
+}
+
+/* -------------- b-footer -------------- */
+#map{
+	width: 100%;
+	height: 500px;
 }
