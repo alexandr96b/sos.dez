@@ -302,6 +302,56 @@ textarea{
 .fancybox-container{
 	z-index: 999999;
 }
+section{
+	position: relative;
+}
+.b-nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 80px;
+	height: 100%;
+}
+.b-nav__wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.b-section-number{
+	color: darkgrey;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	margin: 20px 0;
+}
+.b-nav__arrow{
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+}
+.btn-prev{
+	background: url(../images/btn-prev.png) center no-repeat;
+}
+.btn-prev:hover{
+	background: #ffffff url(../images/btn-prev.png) center no-repeat;
+	box-shadow: 0 5px 20px rgba(51, 51, 51, 0.1);
+}
+.btn-next{
+	background: url(../images/btn-next.png) center no-repeat;
+}
+.btn-next:hover{
+	background: #ffffff url(../images/btn-next.png) center no-repeat;
+	box-shadow: 0 5px 20px rgba(51, 51, 51, 0.1);
+}
+.b-section-img{
+	position: absolute;
+	top: 60px;
+	right: 50px;
+	width: 115px;
+}
 /* End Total css ====*/
 
 /* -------------- page index -------------- */
@@ -461,10 +511,11 @@ textarea{
     top: 16px;
     width: 100%;
 }
-/* -------------- page main -------------- */
+/* -------------- main -------------- */
 .b-main{
-	background: url(../images/main-bg.png) right top no-repeat;	
-	padding: 80px 0;
+	background: url(../images/main-bg.png) no-repeat;
+	background-position: top -86px right;	
+	padding: 85px 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -573,9 +624,103 @@ textarea{
 .b-main-form{
 
 }
+/* -------------- b-info -------------- */
+.b-info{
 
+}
+.b-title{
+	text-align: center;
+	margin: 0 0 55px 0;
+}
+.b-title-number{
+	width: 40px;
+	height: 45px;
+	background: url(../images/title-ico.png) no-repeat;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 20px;
+}
+.b-title-item{
+	color: #333;
+	font-size: 36px;
+	line-height: 38px
+	font-weight: 700;
+	text-transform: none;
+	margin: 0;	
+}
+.b-info-content{
 
+}
+.b-info-content > .row{
+	justify-content: center;
+}
+.b-info-item{
+	text-align: center;
+	margin: 0 0 60px 0;
+}
+.b-info-item__img{
+	padding: 13px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 180px;
+	height: 180px;
+	border: 2px solid #ff4350;
+	border-radius: 100%;
+	position: relative;
+	margin: 0 auto 30px;
+}
+.b-info-item__img:before{
+	position: absolute;
+	top: 88px;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 2px;
+	background: #ff4350;
+	transform: rotate(45deg);
+}
+.b-info-item__img__wrap{
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	background-image: -webkit-linear-gradient(bottom left, #219653 0%, #49c124 100%);
+	background-image: -o-linear-gradient(bottom left, #219653 0%, #49c124 100%);
+	background-image: linear-gradient(to top right, #219653 0%, #49c124 100%);
+	box-shadow: 0 20px 30px rgba(33, 150, 83, 0.2);
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: 0.3s;
+}
+.b-info-item__img__wrap img{
 
+}
+.b-info-item span{
+	display: block;
+	color: #333;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 400;
+}
+.b-info-item__img:hover .b-info-item__img__wrap{
+	background-color: #333;
+	background-image: -webkit-linear-gradient(bottom left, #ff4350 0%, #ff717b 100%);
+	background-image: -o-linear-gradient(bottom left, #ff4350 0%, #ff717b 100%);
+	background-image: linear-gradient(to top right, #ff4350 0%, #ff717b 100%);
+	box-shadow: 0 20px 30px rgba(255, 67, 80, 0.2);
+	transition: 0.3s;
+}
 
 
 
