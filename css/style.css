@@ -1193,6 +1193,56 @@ section{
 .b-faq-item:hover .b-faq-item__top.collapsed span{
 	color: #219653;
 }
+/* -------------- b-block -------------- */
+.b-block{
+	background: url(../images/b-block-bg.jpg) center top no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-block > .container > .row > div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.b-block .b-form-top span{
+	color: #ffffff;
+}
+.b-block .b-input-text{
+	border-color: #ffffff;
+	color: #ffffff;
+}
+.b-block .b-input-text::-webkit-input-placeholder{
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;	
+}
+.b-block .b-input-text:-moz-placeholder{
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;	
+}
+.b-block .b-input-phone{
+	background: url(../images/smartphone2.svg) no-repeat;
+	background-position: right 10px center;
+	background-size: 16px;
+}
+.b-block .b-input-name{
+	background: url(../images/user2.svg) no-repeat;
+	background-position: right 10px center;
+	background-size: 16px;
+}
+.b-block .b-checkbox input[type="checkbox"] + label i{
+	color: #ffffff;
+}
+.b-block .b-checkbox input[type="checkbox"]:checked + label span{
+	border-color: #ffffff;
+	background: url(../images/check2.png) center no-repeat transparent;
+}
 /* -------------- b-footer -------------- */
 #map{
 	width: 100%;
