@@ -33,6 +33,52 @@
 <body>
 
 
+<div class="modal b-modal fade" id="modal-callback" tabindex="-1" role="dialog" aria-labelledby="modal-callback" aria-hidden="true">
+	<div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+        <div class="b-modal-top">
+        	<img src="images/employee2.svg" alt="">
+        	<b>Мы вам перезвоним<br/>
+			в течение 15 минут</b>
+        </div>
+        <div class="b-modal-form">
+			<form class="validate" action="">
+				<input class="b-input-text b-input-name" name="name" type="text" placeholder="Представьтесь">
+				<input class="b-input-text b-input-phone" name="phone" type="text" placeholder="Ваш телефон">
+				<div class="b-checkbox">
+					<input type="checkbox" checked id="g1" name="g4" />
+					<label for="g1"><span></span><i>Даю согласие на обработку<br/> моих
+					персональных данных</i></label>  
+				</div>	
+				<input class="b-input-btn red-btn" type="submit" value="перезвонить">
+			</form>
+        </div>
+	</div>
+</div>
+
+
+<div class="modal b-modal fade" id="modal-ras" tabindex="-1" role="dialog" aria-labelledby="modal-ras" aria-hidden="true">
+	<div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+        <div class="b-modal-top">
+        	<img src="images/employee2.svg" alt="">
+        	<b>Получите расчёт<br/>
+			стоимости за 3 минуты</b>
+        </div>
+        <div class="b-modal-form">
+			<form class="validate" action="">
+				<input class="b-input-text b-input-name" name="name" type="text" placeholder="Представьтесь">
+				<input class="b-input-text b-input-phone" name="phone" type="text" placeholder="Ваш телефон">
+				<div class="b-checkbox">
+					<input type="checkbox" checked id="h1" name="h4" />
+					<label for="h1"><span></span><i>Даю согласие на обработку<br/> моих
+					персональных данных</i></label>  
+				</div>	
+				<input class="b-input-btn red-btn" type="submit" value="Получить">
+			</form>
+        </div>
+	</div>
+</div>
 
 
 <button class="btn-scroll">↑</button> 
@@ -76,7 +122,7 @@
 								<a href="tel:+7 (342) 209-96-88" class="b-phone"><span>+7 (342)</span> 209-96-88</a>
 							</div>
 							<div class="btn-callback__wrap">
-								<button class="btn-callback" href="#modal-callback" data-toggle="modal" data-target="#modal-callback">Заказать звонок</button>
+								<button class="btn-callback" data-toggle="modal" data-target="#modal-callback">Заказать звонок</button>
 							</div>
 							<div class="b-mobile">
 							    <div class="menu-icon">
@@ -252,7 +298,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xl">
-						<button class="btn-esc red-btn">Избавиться</button>
+						<button class="btn-esc red-btn" data-toggle="modal" data-target="#modal-ras">Избавиться</button>
 					</div>
 				</div>
 			</div>
@@ -366,7 +412,7 @@
 				</div>
 				<div class="row">
 					<div class="col-xl">
-						<button class="btn-spec">Вызвать специалиста</button>
+						<button class="btn-spec" data-toggle="modal" data-target="#modal-ras">Вызвать специалиста</button>
 					</div>
 				</div>
 			</div>
