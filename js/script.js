@@ -35,6 +35,18 @@ function timer(value, hourBlock, minBlock, secBlock){
         }, 1000);
       }
 
+$('.b-foto-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: false,
+  variableWidth: true,
+  infinity: true,
+  centerMode: true,
+  adaptiveHeight: true,
+  focusOnSelect: true,
+  arrows: true,
+  dots: false
+});
 
 
 
@@ -147,48 +159,6 @@ $('.b-partners-slider').slick({
 ]
 });
 
-
-$('.b-foto-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: false,
-  centerMode: true,
-  variableWidth: true,
-  adaptiveHeight: true,
-  arrows: true,
-  nextArrow: '<button class="b-arrow b-arrow__next">→</button>',
-  prevArrow: '<button class="b-arrow b-arrow__prev">←</button>',
-  focusOnSelect: true,
-  responsive: [
-  {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 992,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      variableWidth: false,
-      centerMode: false,
-      adaptiveHeight: false,      
-      slidesToScroll: 1
-    }
-  }
-  // You can unslick at a given breakpoint now by adding:
-  // settings: "unslick"
-  // instead of a settings object
-]
-});
 
 $('.b-about-slider').slick({
   slidesToShow: 1,
