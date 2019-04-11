@@ -346,6 +346,26 @@ section{
 	background: #ffffff url(../images/btn-next.png) center no-repeat;
 	box-shadow: 0 5px 20px rgba(51, 51, 51, 0.1);
 }
+
+
+.b-nav.white .btn-prev{
+	background: url(../images/btn-prevw.png) center no-repeat;
+}
+.b-nav.white .b-section-number{
+	color: #ffffff;
+}
+.b-nav.white .btn-prev:hover{
+	background: #ffffff url(../images/btn-prev.png) center no-repeat;
+	box-shadow: 0 5px 20px rgba(51, 51, 51, 0.1);
+}
+.b-nav.white .btn-next{
+	background: url(../images/btn-nextw.png) center no-repeat;
+}
+.b-nav.white .btn-next:hover{
+	background: #ffffff url(../images/btn-next.png) center no-repeat;
+	box-shadow: 0 5px 20px rgba(51, 51, 51, 0.1);
+}
+
 .b-section-img{
 	position: absolute;
 	top: 60px;
@@ -626,7 +646,10 @@ section{
 }
 /* -------------- b-info -------------- */
 .b-info{
-
+	padding: 0 0 100px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .b-title{
 	text-align: center;
@@ -721,10 +744,131 @@ section{
 	box-shadow: 0 20px 30px rgba(255, 67, 80, 0.2);
 	transition: 0.3s;
 }
+.btn-esc{
+	width: 240px;
+	height: 60px;
+	margin: 0 auto 0;
+	display: block;
+	padding: 0 15px 0 0;
+}
 
+/* -------------- b-advantages -------------- */
+.b-advantages{
+	background: url(../images/b-advantages-bg.jpg) center top no-repeat;
+	background-size: cover;
+	padding: 80px 0 100px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-advantages .b-title{
+	margin: 0 0 65px 0;
+}
+.b-advantages .b-title-item{
+	color: #ffffff;
+}
+.b-advantages-content{
 
-
-
+}
+.b-advantages-content > .row > div{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.b-advantages-item{
+	background: #2e9f5e;
+	box-shadow: 0 10px 50px rgba(51, 51, 51, 0.2);
+	padding: 95px 0 25px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	height: 100%;
+}
+.b-advantages-item__img__wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -65px;	
+	width: 100%;
+}
+.b-advantages-item__img{
+	width: 130px;
+	height: 130px;
+	background-color: #81d321;
+	background-image: -webkit-linear-gradient(bottom left, #81d321 0%, #a1e254 100%);
+	background-image: -o-linear-gradient(bottom left, #81d321 0%, #a1e254 100%);
+	background-image: linear-gradient(to top right, #81d321 0%, #a1e254 100%);
+	border-radius: 100%;
+	box-shadow: 0 20px 30px rgba(129, 211, 33, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.b-advantages-item__img img{
+	width: 80px;
+}
+.b-advantages-item__content{
+	text-align: center;
+}
+.b-advantages-item__content b{
+	display: block;
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 700;
+	margin: 0 0 27px 0;
+	transition: 0.3s;
+}
+.b-advantages-item__content p{
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0;
+	transition: 0.3s;
+}
+.b-advantages-item:hover{
+	transition: 0.3s;
+	background: #f9f9f9;
+	box-shadow: 0 10px 50px rgba(51, 51, 51, 0.2);	
+}
+.b-advantages-item:hover .b-advantages-item__content p , .b-advantages-item:hover .b-advantages-item__content b{
+	color: #000000;
+	transition: 0.3s;
+}
+.btn-spec{
+	width: 320px;
+	height: 60px;
+	background: url(../images/left-arrow__black.svg) no-repeat #ffffff;
+	background-position: right 40px center;
+	background-size: 19px;
+	border-radius: 20px;
+	box-shadow: 0 10px 15px rgba(51, 51, 51, 0.2);
+	color: #333;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	padding: 0 25px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto 0;
+}
+.btn-spec:hover{
+	background: url(../images/left-arrow__black.svg) no-repeat #ebebeb;
+	background-position: right 40px center;
+	background-size: 19px;
+	box-shadow: 0 10px 15px rgba(51, 51, 51, 0.2);
+}
+.btn-spec:active{
+	background: url(../images/left-arrow__black.svg) no-repeat #dfdfdf;
+	background-position: right 40px center;
+	background-size: 19px;
+	box-shadow: 0 5px 10px rgba(51, 51, 51, 0.2);
+}
 
 #map{
 	width: 100%;
