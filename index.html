@@ -34,70 +34,30 @@
 
 
 
-<!-- modal-modal-form
-<div id="modal-form">
-	<div class="b-form-wrap">
-		<div class="b-form-top">
-			<div class="b-form-top__ico"></div>
-			<b>Оставить заявку</b>
-			<span>Мы свяжемся с вами и обсудим все детали</span>
-		</div>
-		<form class="validate" action="">
-			<div class="b-form-top__row">
-				<div class="b-input-wrap">
-					<input class="b-input-text" type="text" name="name" placeholder="Представьтесь">
-				</div>
-				<div class="b-input-wrap">
-					<input class="b-input-text" type="text" name="phone" placeholder="Ваш телефон">
-				</div>
-			</div>
-			<input class="b-input-text" type="text" required placeholder="Краткое содержание заявки">
-            <div class="b-checkbox">
-              <input type="checkbox" checked id="n1" name="n4" />
-              <label for="n1"><span></span><i>Даю согласие на обработку моих<br/>
-				персональных данных</i></label>  
-            </div>								
-			<input class="b-input-btn" type="submit" value="получить">								
-		</form>
-	</div>
-</div>
 
-modal-modal-callback
-<div id="modal-callback">
-	<div class="b-form-wrap">
-		<div class="b-form-top">
-			<div class="b-form-top__ico"></div>
-			<b>Мы вам перезвоним</b>
-			<span>В течение 10 минут с вами свяжется наш<br/>
-			эксперт и подробно проконсультирует</span>
-		</div>
-		<form class="validate" action="">
-			<div class="b-form-top__row">
-				<div class="b-input-wrap">
-					<input class="b-input-text" type="text" name="name" placeholder="Представьтесь">
-				</div>
-			</div>
-			<div class="b-input-wrap">
-				<input class="b-input-text" type="text" name="phone" placeholder="Ваш телефон">
-			</div>
-            <div class="b-checkbox">
-              <input type="checkbox" checked id="n1" name="n4" />
-              <label for="n1"><span></span><i>Даю согласие на обработку моих
-				персональных данных</i></label>  
-            </div>								
-			<input class="b-input-btn" type="submit" value="Жду звонка">								
-		</form>
-	</div>
-</div> -->
-
-
-
-<!-- 
-<button class="btn-scroll">↑</button> -->
-
-
+<button class="btn-scroll">↑</button> 
 
 <div class="b-container">
+	<div class="b-menu">
+		<div class="menu-close__wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<button class="menu-close"></button>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<ul>
+			<li><a href="#info"><span>01/</span>Навсегда избавим вас от</a></li>
+			<li><a href="#adv"><span>02/</span>Почему нам доверяют</a></li>
+			<li><a href="#serv"><span>03/</span>Кому подходят наши услуги</a></li>
+			<li><a href="#desc"><span>04/</span>Как происходит обработка</a></li>
+			<li><a href="#faq"><span>05/</span>Часто задаваемые вопросы</a></li>
+			<li><a href="#rev"><span>06/</span>Отзывы</a></li>
+			<li><a href="#cert"><span>07/</span>Сертификаты</a></li>
+		</ul>
+	</div>
 
 		<!-- begin b-header -->
 		<header class="b-header">
@@ -112,8 +72,12 @@ modal-modal-callback
 							</span>
 						</a>
 						<div class="b-header-right">
-							<a href="tel:+7 (342) 209-96-88" class="b-phone"><span>+7 (342)</span> 209-96-88</a>
-							<button class="modal1 btn-callback" href="#modal-callback">Заказать звонок</button>
+							<div class="b-phone-wrap">
+								<a href="tel:+7 (342) 209-96-88" class="b-phone"><span>+7 (342)</span> 209-96-88</a>
+							</div>
+							<div class="btn-callback__wrap">
+								<button class="btn-callback" href="#modal-callback" data-toggle="modal" data-target="#modal-callback">Заказать звонок</button>
+							</div>
 							<div class="b-mobile">
 							    <div class="menu-icon">
 							        <div class="menu-icon__wrapper">
@@ -133,7 +97,7 @@ modal-modal-callback
 		<!-- end b-header --> 
 		
 		<!-- begin b-main -->
-		<section class="b-main">
+		<section class="b-main" id="main">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl">
@@ -173,7 +137,7 @@ modal-modal-callback
 									и подробно проконсультирует</p>
 								</div>
 								<div class="b-main-form">
-									<form action="">
+									<form action="" class="validate">
 										<input class="b-input-text b-input-phone" name="phone" type="text" placeholder="Ваш телефон">
 							            <div class="b-checkbox">
 							              <input type="checkbox" checked id="n1" name="n4" />
@@ -192,15 +156,15 @@ modal-modal-callback
 		<!-- end b-main --> 
 
 		<!-- begin b-info -->
-		<section class="b-info">
+		<section class="b-info" id="info">
 			<div class="b-section-img">
 				<img src="images/spray.svg" alt="">
 			</div>
 			<div class="b-nav">
 				<div class="b-nav__wrap">
-					<a href="" class="b-nav__arrow btn-prev"></a>
+					<a href="#main" class="b-nav__arrow btn-prev"></a>
 					<div class="b-section-number">01</div>
-					<a href="" class="b-nav__arrow btn-next"></a>
+					<a href="#adv" class="b-nav__arrow btn-next"></a>
 				</div>
 			</div>
 			<div class="container">
@@ -296,15 +260,15 @@ modal-modal-callback
 		<!-- end b-info -->	
 
 		<!-- begin b-advantages -->
-		<section class="b-advantages">
+		<section class="b-advantages" id="adv">
 			<div class="b-section-img">
 				<img src="images/target.svg" alt="">
 			</div>
 			<div class="b-nav white">
 				<div class="b-nav__wrap">
-					<a href="" class="b-nav__arrow btn-prev"></a>
+					<a href="#info" class="b-nav__arrow btn-prev"></a>
 					<div class="b-section-number">02</div>
-					<a href="" class="b-nav__arrow btn-next"></a>
+					<a href="#serv" class="b-nav__arrow btn-next"></a>
 				</div>
 			</div>			
 			<div class="container">
@@ -410,15 +374,15 @@ modal-modal-callback
 		<!-- end b-advantages -->	
 
 		<!-- begin b-services -->
-		<section class="b-services">
+		<section class="b-services" id="serv">
 			<div class="b-section-img">
 				<img src="images/team.svg" alt="">
 			</div>
 			<div class="b-nav">
 				<div class="b-nav__wrap">
-					<a href="" class="b-nav__arrow btn-prev"></a>
+					<a href="#adv" class="b-nav__arrow btn-prev"></a>
 					<div class="b-section-number">03</div>
-					<a href="" class="b-nav__arrow btn-next"></a>
+					<a href="#desc" class="b-nav__arrow btn-next"></a>
 				</div>
 			</div>
 			<div class="container">
@@ -432,7 +396,7 @@ modal-modal-callback
 				</div>
 				<div class="b-services-content">
 					<div class="row">
-						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
 							<div class="b-services-item">
 								<div class="b-services-item__img">
 									<img src="images/b-services-item__img.jpg" alt="">
@@ -440,7 +404,7 @@ modal-modal-callback
 								<span>Квартиры</span>
 							</div>
 						</div>
-						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
 							<div class="b-services-item">
 								<div class="b-services-item__img">
 									<img src="images/b-services-item__img2.jpg" alt="">
@@ -449,7 +413,7 @@ modal-modal-callback
 								рестораны</span>
 							</div>
 						</div>
-						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
 							<div class="b-services-item">
 								<div class="b-services-item__img">
 									<img src="images/b-services-item__img3.jpg" alt="">
@@ -458,7 +422,7 @@ modal-modal-callback
 								промышленность</span>
 							</div>
 						</div>
-						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
 							<div class="b-services-item">
 								<div class="b-services-item__img">
 									<img src="images/b-services-item__img4.jpg" alt="">
@@ -467,7 +431,7 @@ modal-modal-callback
 								супермаркеты</span>
 							</div>
 						</div>
-						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
 							<div class="b-services-item">
 								<div class="b-services-item__img">
 									<img src="images/b-services-item__img5.jpg" alt="">
@@ -476,7 +440,7 @@ modal-modal-callback
 								хостелы</span>
 							</div>
 						</div>
-						<div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
+						<div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
 							<div class="b-services-item">
 								<div class="b-services-item__img">
 									<img src="images/b-services-item__img6.jpg" alt="">
@@ -494,7 +458,7 @@ modal-modal-callback
 		<section class="b-wrap">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+					<div class="col-xl-6 col-lg-5 col-md-12 col-sm-12">
 						<div class="b-comfort">
 							<div class="b-comfort-top">
 								<h3 class="b-title-text">Удобства для юридических лиц</h3>
@@ -527,27 +491,25 @@ modal-modal-callback
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+					<div class="col-xl-6 col-lg-7 col-md-12 col-sm-12">
 						<div class="b-wrap-right">
 							<div class="b-form">
 								<div class="b-form-top">
 									<span>Получите расчёт стоимости за 3 минуты</span>
 								</div>
-								<form action="">
-									<form class="validate" action="">
-										<div class="b-form-row">
-											<input class="b-input-text b-input-name" name="name" type="text" placeholder="Представьтесь">
-											<input class="b-input-text b-input-phone" name="phone" type="text" placeholder="Ваш телефон">
-										</div>
-										<div class="b-form-row">
-											<input class="b-input-btn red-btn" type="submit" value="Получить">	
-											<div class="b-checkbox">
-												<input type="checkbox" checked id="b1" name="b4" />
-												<label for="b1"><span></span><i>Даю согласие на обработку<br/> моих
-												персональных данных</i></label>  
-											</div>										
-										</div>						
-									</form>
+								<form class="validate" action="">
+									<div class="b-form-row">
+										<input class="b-input-text b-input-name" name="name" type="text" placeholder="Представьтесь">
+										<input class="b-input-text b-input-phone" name="phone" type="text" placeholder="Ваш телефон">
+									</div>
+									<div class="b-form-row">
+										<input class="b-input-btn red-btn" type="submit" value="Получить">	
+										<div class="b-checkbox">
+											<input type="checkbox" checked id="b1" name="b4" />
+											<label for="b1"><span></span><i>Даю согласие на обработку<br/> моих
+											персональных данных</i></label>  
+										</div>										
+									</div>						
 								</form>
 							</div>
 						</div>
@@ -558,15 +520,15 @@ modal-modal-callback
 		<!-- end b-wrap -->	
 		
 		<!-- begin b-desc -->
-		<section class="b-desc">
+		<section class="b-desc" id="desc">
 			<div class="b-section-img">
 				<img src="images/employee.svg" alt="">
 			</div>
 			<div class="b-nav">
 				<div class="b-nav__wrap">
-					<a href="" class="b-nav__arrow btn-prev"></a>
+					<a href="#serv" class="b-nav__arrow btn-prev"></a>
 					<div class="b-section-number">04</div>
-					<a href="" class="b-nav__arrow btn-next"></a>
+					<a href="#foto" class="b-nav__arrow btn-next"></a>
 				</div>
 			</div>
 			<div class="container">
@@ -658,15 +620,15 @@ modal-modal-callback
 		<!-- end b-desc -->
 
 		<!-- begin b-foto -->
-		<section class="b-foto">
+		<section class="b-foto" id="foto">
 			<div class="b-section-img">
 				<img src="images/foto-img.png" alt="">
 			</div>
 			<div class="b-nav">
 				<div class="b-nav__wrap">
-					<a href="" class="b-nav__arrow btn-prev"></a>
+					<a href="#desc" class="b-nav__arrow btn-prev"></a>
 					<div class="b-section-number">04</div>
-					<a href="" class="b-nav__arrow btn-next"></a>
+					<a href="#faq" class="b-nav__arrow btn-next"></a>
 				</div>
 			</div>			
 			<div class="container">
@@ -717,15 +679,15 @@ modal-modal-callback
 		<!-- end b-foto -->	
 
 		<!-- begin b-faq -->
-		<section class="b-faq">
+		<section class="b-faq" id="faq">
 			<div class="b-section-img">
 				<img src="images/conversation.svg" alt="">
 			</div>
 			<div class="b-nav">
 				<div class="b-nav__wrap">
-					<a href="" class="b-nav__arrow btn-prev"></a>
+					<a href="#foto" class="b-nav__arrow btn-prev"></a>
 					<div class="b-section-number">06</div>
-					<a href="" class="b-nav__arrow btn-next"></a>
+					<a href="#rev" class="b-nav__arrow btn-next"></a>
 				</div>
 			</div>			
 			<div class="container">
@@ -796,21 +758,19 @@ modal-modal-callback
 							<div class="b-form-top">
 								<span>Получите консультацию нашего специалиста</span>
 							</div>
-							<form action="">
-								<form class="validate" action="">
-									<div class="b-form-row">
-										<input class="b-input-text b-input-name" name="name" type="text" placeholder="Представьтесь">
-										<input class="b-input-text b-input-phone" name="phone" type="text" placeholder="Ваш телефон">
-									</div>
-									<div class="b-form-row">
-										<input class="b-input-btn red-btn" type="submit" value="Получить">	
-										<div class="b-checkbox">
-											<input type="checkbox" checked id="q1" name="q4" />
-											<label for="q1"><span></span><i>Даю согласие на обработку<br/> моих
-											персональных данных</i></label>  
-										</div>										
-									</div>						
-								</form>
+							<form class="validate" action="">
+								<div class="b-form-row">
+									<input class="b-input-text b-input-name" name="name" type="text" placeholder="Представьтесь">
+									<input class="b-input-text b-input-phone" name="phone" type="text" placeholder="Ваш телефон">
+								</div>
+								<div class="b-form-row">
+									<input class="b-input-btn red-btn" type="submit" value="Получить">	
+									<div class="b-checkbox">
+										<input type="checkbox" checked id="q1" name="q4" />
+										<label for="q1"><span></span><i>Даю согласие на обработку<br/> моих
+										персональных данных</i></label>  
+									</div>										
+								</div>						
 							</form>
 						</div>						
 					</div>
@@ -820,15 +780,15 @@ modal-modal-callback
 		<!-- end b-block -->	
 		
 		<!-- begin b-reviews -->
-		<section class="b-reviews">
+		<section class="b-reviews" id="rev">
 			<div class="b-section-img">
 				<img src="images/meeting.svg" alt="">
 			</div>
 			<div class="b-nav">
 				<div class="b-nav__wrap">
-					<a href="" class="b-nav__arrow btn-prev"></a>
+					<a href="#faq" class="b-nav__arrow btn-prev"></a>
 					<div class="b-section-number">07</div>
-					<a href="" class="b-nav__arrow btn-next"></a>
+					<a href="#cert" class="b-nav__arrow btn-next"></a>
 				</div>
 			</div>				
 			<div class="container">
@@ -842,7 +802,7 @@ modal-modal-callback
 				</div>
 				<div class="b-reviews-content">
 					<div class="row">
-						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
 							<div class="b-reviews-item">
 								<div class="b-reviews-item__top">
 									<b>“</b>
@@ -854,7 +814,7 @@ modal-modal-callback
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
 							<div class="b-reviews-item">
 								<div class="b-reviews-item__top">
 									<b>“</b>
@@ -866,7 +826,7 @@ modal-modal-callback
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
 							<div class="b-reviews-item">
 								<div class="b-reviews-item__top">
 									<b>“</b>
@@ -885,15 +845,15 @@ modal-modal-callback
 		<!-- end b-reviews -->
 
 		<!-- begin b-certificates -->
-		<section class="b-certificates">
+		<section class="b-certificates" id="cert">
 			<div class="b-section-img">
 				<img src="images/resume.svg" alt="">
 			</div>
 			<div class="b-nav">
 				<div class="b-nav__wrap">
-					<a href="" class="b-nav__arrow btn-prev"></a>
+					<a href="#rev" class="b-nav__arrow btn-prev"></a>
 					<div class="b-section-number">08</div>
-					<a href="" class="b-nav__arrow btn-next"></a>
+					<a href="#place" class="b-nav__arrow btn-next"></a>
 				</div>
 			</div>			
 			<div class="container">
@@ -969,7 +929,7 @@ modal-modal-callback
 
 
 		<!-- begin b-map -->
-		<section class="b-map">
+		<section class="b-map" id="place">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl">

@@ -36,22 +36,22 @@ function timer(value, hourBlock, minBlock, secBlock){
       }
 
 $('.b-foto-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: false,
-  variableWidth: true,
-  infinity: true,
-  centerMode: true,
-  adaptiveHeight: true,
-  focusOnSelect: true,
-  arrows: true,
-  dots: false
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: false,
+    variableWidth: true,
+    infinity: true,
+    centerMode: true,
+    adaptiveHeight: true,
+    focusOnSelect: true,
+    arrows: true,
+    dots: false
 });
 
 
 
 
-$(".b-main-left__bottom a").click(function (event) {
+$(".b-nav__wrap a").click(function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;
@@ -59,7 +59,7 @@ $(".b-main-left__bottom a").click(function (event) {
     $('body,html').animate({scrollTop: top - header}, 700);
 });
 
-$(".b-menu-left a").click(function (event) {
+$(".b-menu ul li a").click(function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;
@@ -67,38 +67,6 @@ $(".b-menu-left a").click(function (event) {
     $('body,html').animate({scrollTop: top - header}, 700);
 });
 
-$('.menu-icon').click(function(){
-  $('.b-menu').toggleClass('active');
-  $(this).toggleClass('active');
-});
-
-
-$(document).on('click', function(e) {
-  if (!$(e.target).closest(".menu-icon , .b-menu-wrap").length) {
-    $('.b-menu').removeClass('active');
-    $('.menu-icon').removeClass('active');
-  }
-  e.stopPropagation();
-});
-
-
-$('.menu-close').click(function(){
-  $('.menu-icon').removeClass('active');
-  $('.b-menu').removeClass('active');
-});
-
-$(".modal1").fancybox();
-
-/*var $page = $('html, body');
-$('.btn-more[href*="#"]').click(function() {
-    $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 400);
-    return false;
-});
-
-
-*/
 $(".btn-scroll").click(function(){
   $('html, body').animate({scrollTop:0}, 'slow');
 });
@@ -122,171 +90,50 @@ $(window).scroll( function (){
 
   });
 
+$('.menu-icon').click(function(){
+  $('.b-menu').toggleClass('active');
+  $(this).toggleClass('active');
+});
 
-$('.b-partners-slider').slick({
-  slidesToShow: 6,
-  slidesToScroll: 6,
-  fade: false,
-  variableWidth: false,
-  adaptiveHeight: true,
-  arrows: false,
-  dots: true,
-  responsive: [
-  {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 4,
-      slidesToScroll: 4
-    }
-  },
-  {
-    breakpoint: 992,
-    settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3
-    }
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2
-    }
+$(document).on('click', function(e) {
+  if (!$(e.target).closest(".menu-icon , .b-menu ul li a").length) {
+    $('.b-menu').removeClass('active');
+    $('.menu-icon').removeClass('active');
   }
-  // You can unslick at a given breakpoint now by adding:
-  // settings: "unslick"
-  // instead of a settings object
-]
+  e.stopPropagation();
+});
+
+$('.menu-close').click(function(){
+  $('.menu-icon').removeClass('active');
+  $('.b-menu').removeClass('active');
 });
 
 
-$('.b-about-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: false,
-  centerMode: true,
-  variableWidth: true,
-  adaptiveHeight: true,
-  arrows: true,
-  nextArrow: '<button class="b-arrow b-arrow__next">→</button>',
-  prevArrow: '<button class="b-arrow b-arrow__prev">←</button>',
-  focusOnSelect: true,
-  responsive: [
-  {
-    breakpoint: 1560,
-    settings: {
-      slidesToShow: 1,     
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 992,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      variableWidth: false,
-      centerMode: false,
-      adaptiveHeight: false,      
-      slidesToScroll: 1
-    }
-  }
-  // You can unslick at a given breakpoint now by adding:
-  // settings: "unslick"
-  // instead of a settings object
-]
+$(".b-menu-left a").click(function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        header = $('.b-header').outerHeight();
+    $('body,html').animate({scrollTop: top - header}, 700);
 });
 
 
-$('.b-prepack-next').on("click", function() {
-    $('.b-prepack-slider__big').slick("slickNext"); 
-})
-$('.b-prepack-prev').on("click", function() {
-    $('.b-prepack-slider__big').slick("slickPrev"); 
-})
 
-$('.b-prepack-slider__big').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: false,
-  arrows: false,
-  asNavFor: '.b-prepack-slider__pager',
-  responsive: [
-  {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 992,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  }
-  // You can unslick at a given breakpoint now by adding:
-  // settings: "unslick"
-  // instead of a settings object
-]
-});
-$('.b-prepack-slider__pager').slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  arrows: false,
-  dots: false,
-  asNavFor: '.b-prepack-slider__big',
-  focusOnSelect: true,
-  variableWidth: true,
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
+
+
+$(".modal1").fancybox();
+
+/*var $page = $('html, body');
+$('.btn-more[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
 });
 
 
+*/
+ 
 
 $('.validate').each(function() {
     $(this).validate({
@@ -615,7 +462,8 @@ function moveMenu(){
          $(function(){ 
 
 
-          $('.123').appendTo('.123');
+          $('.b-phone').appendTo('.b-menu');
+          $('.btn-callback').appendTo('.b-menu');
 
         
            
@@ -623,7 +471,8 @@ function moveMenu(){
   } else{
          $(function(){ 
 
-
+          $('.b-phone').appendTo('.b-phone-wrap');
+          $('.btn-callback').appendTo('.btn-callback__wrap');
 
            
      })        
