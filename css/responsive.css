@@ -207,7 +207,7 @@
 		margin: 15px 0;
 	}
 	.b-certificates-content > .row > div{
-		width: 50%;
+		 
 	}
 	section{
 		padding: 25px 0 !important;
@@ -351,6 +351,9 @@
 	#map{
 		position: static;
 		height: 230px;
+	}
+	.b-certificates-item__img img{
+		height: auto;
 	}
 }
 
